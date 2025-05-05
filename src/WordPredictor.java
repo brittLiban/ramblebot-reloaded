@@ -130,8 +130,7 @@ public class WordPredictor {
         // Hint: The Random class has an instance method "nextDouble" that returns a
         // value in the range [0., 1.]
 
-        int low = 0;
-        int high = word.length() - 1;
+        
 
         // lets get a random number - not sure what for yet
         double randomNum = rng.nextDouble();
@@ -139,6 +138,10 @@ public class WordPredictor {
         // selecting selecting all the words the could come after our targeted word
         List<WordProbability> listOfNextWords = probs.get(word);
 
+        int low = 0;
+        int high = listOfNextWords.size() - 1;
+
+        
         while (low < high) {
             // whats going to be our mid value - the location thats currently getting
             // checked
