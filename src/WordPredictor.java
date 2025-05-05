@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 import java.util.Objects;
@@ -12,6 +13,8 @@ import java.util.Random;
 public class WordPredictor {
     private final Random rng;
     private final Map<String, List<WordProbability>> probs;
+
+    
     
     /**
      * Constructs a WordPredictor with the provided probability map and random number generator.
@@ -110,6 +113,25 @@ public class WordPredictor {
         // On my computer the linear version causes the tests to take about 20seconds, and the log
         // version runs in less than two. Your results may vary.
         // Hint: The Random class has an instance method "nextDouble" that returns a value in the range [0., 1.]
+
+        int low = 0;
+        int high = word.length() -1;
+
+        List<WordProbability> words = new ArrayList<>();
+        while(low < high){
+            //makes its a binary search 
+            int mid = low + (high - low ) / 2;
+
+
+        }
+        
+
+
+        
         return null;
+
+
     }
+
+    
 }
