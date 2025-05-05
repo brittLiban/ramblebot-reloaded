@@ -132,6 +132,8 @@ public class WordPredictor {
             int mid = low + (high - low ) / 2;
 
 
+            //selecting a word
+            probs.get(word);
         }
         
 
