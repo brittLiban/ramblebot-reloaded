@@ -126,14 +126,15 @@ public class WordPredictor {
         //lets get a random number - not sure what for yet
         double randomNum = rng.nextDouble();
 
-        List<WordProbability> words = new ArrayList<>();
+        //selecting selecting all the words the could come after our targeted word
+        List<WordProbability> list = probs.get(word);
+        
         while(low < high){
             //whats going to be our mid value - the location thats currently getting checked
             int mid = low + (high - low ) / 2;
 
 
-            //selecting a word
-            probs.get(word);
+            
         }
         
 
