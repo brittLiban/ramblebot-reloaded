@@ -125,10 +125,10 @@ public class WordPredictor {
 
         //lets get a random number - not sure what for yet
         double randomNum = rng.nextDouble();
-        
+
         List<WordProbability> words = new ArrayList<>();
         while(low < high){
-            //makes its a binary search 
+            //whats going to be our mid value - the location thats currently getting checked
             int mid = low + (high - low ) / 2;
 
 
