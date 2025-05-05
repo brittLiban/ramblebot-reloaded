@@ -123,6 +123,9 @@ public class WordPredictor {
         int low = 0;
         int high = word.length() -1;
 
+        //lets get a random number - not sure what for yet
+        double randomNum = rng.nextDouble();
+        
         List<WordProbability> words = new ArrayList<>();
         while(low < high){
             //makes its a binary search 
